@@ -1,0 +1,20 @@
+
+=== First step
+1: Get History
+
+=== type 1
+2: Train
+3: Get model
+4: Use model
+
+=== type 2
+2: Make algorithm
+3: Make formular
+4: Calculate result
+
+=== Result prediction
+5: Get next race data
+6: Predict data
+=== after race
+7: tune countermeasure
+8: Change the algorithm
