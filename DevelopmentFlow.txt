@@ -1,0 +1,15 @@
+=== At the beginning
+1: Collect all link
+2: Extract data to text files
+3: insert into database or SQL lite file
+
+=== Do not do the next until the data is completed
+4: Make the system flow
+5: Make test case and whole system
+6: Dummy test
+
+=== make sure the whole system are well-tested
+7: Make the formular
+8: Test the formular with replacing previous dummy test
+9: Test the accuracy of the formular and the whole system
+10: Improve the system (goto step 7)
