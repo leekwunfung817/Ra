@@ -30,8 +30,8 @@ def HisResAll(y,m,d):
 	try:
 		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
 		driver.get(url)
-		txt=driver.page_source
 		time.sleep(5)
+		txt=driver.page_source
 		driver.close()
 		return txt
 	except Exception as e:
