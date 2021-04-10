@@ -1,0 +1,2 @@
+pip3 install chromedriver-py
+pip3 install selenium
