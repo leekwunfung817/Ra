@@ -24,10 +24,12 @@ import os.path
 
 def HisResAll(y,m,d):
 	binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
+	url="https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate="+y+"/"+m+"/"+d
+	print(url)
 	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
 	try:
 		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
-		driver.get("https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate="+y+"/"+m+"/"+d)
+		driver.get(url)
 		txt=driver.page_source
 		time.sleep(5)
 		driver.close()
@@ -37,6 +39,7 @@ def HisResAll(y,m,d):
 	return None
 
 def RememHis(y,m,d):
+	print(y+m+d)
 	filename = "../../Data/His/ResultsAll/"+y+m+d+".html"
 	if os.path.isfile(filename):
 		return
@@ -229,6 +232,8 @@ RememHis('2019','09','15')
 RememHis('2019','09','11')
 RememHis('2019','09','08')
 RememHis('2019','09','01')
+
+# RememHis('2019','08','31')
 
 
 # assert "Python" in driver.title
