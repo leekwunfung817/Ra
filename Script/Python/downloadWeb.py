@@ -1,8 +1,19 @@
+
+# from pyvirtualdisplay import Display
+# display = Display(visible=0, size=(800, 600))
+# display.start()
+
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
 # python3 downloadWeb.py
 # python3 /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/downloadWeb.py
 import time
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+chrome_options = Options()
+chrome_options.add_argument("--window-size=5,5")
+# chrome_options.add_argument("--no-startup-window")
+
 
 import os.path
 
@@ -15,7 +26,7 @@ def HisResAll(y,m,d):
 	binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
 	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
 	try:
-		driver = webdriver.Chrome(executable_path=binary_path)
+		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
 		driver.get("https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate="+y+"/"+m+"/"+d)
 		txt=driver.page_source
 		time.sleep(5)

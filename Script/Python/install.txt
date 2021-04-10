@@ -4,3 +4,4 @@ https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/
 
 pip3 install chromedriver-py
 pip3 install selenium
+pip3 install pyvirtualdisplay
