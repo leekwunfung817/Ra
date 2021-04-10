@@ -12,7 +12,8 @@ import os.path
 
 
 def HisResAll(y,m,d):
-	binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/chromedriver.89.0.4389.23'
+	binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
+	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
 	try:
 		driver = webdriver.Chrome(executable_path=binary_path)
 		driver.get("https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate="+y+"/"+m+"/"+d)
