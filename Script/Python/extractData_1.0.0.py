@@ -1,7 +1,10 @@
+# ResultsStage_1.0.0
+# extract data from ../../Data/His/ResultsAll/ to ../../Data/His/ResultsStage_1.0.0/
+
 from bs4 import BeautifulSoup
 
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 extractData.py
+# python3 extractData_1.0.0.py
 
 import os
 

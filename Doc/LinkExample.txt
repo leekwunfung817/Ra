@@ -23,17 +23,22 @@ https://racing.hkjc.com/racing/overseas/Chinese/racecard.aspx?para=/20210410/S1/
 https://racing.hkjc.com/racing/overseas/Chinese/racecard.aspx?para=/20210410/S1/7
 
 History number
+
+(First 4 winner only)
 https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx
 Sun
 https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate=2021/04/11
 Sat
 https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate=2021/04/10
-Thu
-https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate=2021/04/08
-Mon
-https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate=2021/04/05
-Wed
-https://racing.hkjc.com/racing/information/Chinese/Racing/ResultsAll.aspx?RaceDate=2021/03/31
+
+(All race in a completion)
+com 1
+https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=1
+com 4
+https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=4
+
+
+
 
 History Video
 type1

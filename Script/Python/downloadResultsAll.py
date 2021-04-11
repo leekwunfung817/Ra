@@ -4,8 +4,7 @@
 # display.start()
 
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 downloadWeb.py
-# python3 /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/downloadWeb.py
+# python3 downloadResultsAll.py
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
