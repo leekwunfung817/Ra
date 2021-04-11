@@ -17,21 +17,12 @@ https://racing.hkjc.com/racing/information/Chinese/Trainers/TrainerRanking.aspx?
 
 
 
-===== Process 2
-Next Race
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx
 
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=1
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=2
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=3
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=4
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=5
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=6
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=7
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=8
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=9
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=10
-https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=11
+
+
+
+
+===== Process 2
 
 Recent Race
 https://racing.hkjc.com/racing/overseas/chinese/racecard.aspx?para=/20210410/S1/1
@@ -58,8 +49,6 @@ com 4
 https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=4
 
 
-
-
 History Video
 type1
 https://racing.hkjc.com/racing/video/play.asp?type=replay-full&date=20190901&no=01&lang=chi
@@ -69,3 +58,46 @@ https://racing.hkjc.com/racing/video/play.asp?type=passthrough&date=20190901&no=
 type3
 https://racing.hkjc.com/racing/video/aerial.aspx?date=20190901&no=01&lang=chi
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===== Process 3
+
+Next Race
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx
+
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=1
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=2
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=3
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=4
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=5
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=6
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=7
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=8
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=9
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=10
+https://racing.hkjc.com/racing/information/Chinese/racing/RaceCard.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=11
+
+Horse mark
+https://racing.hkjc.com/racing/information/Chinese/Horse/LatestOnHorse.aspx?View=Horses/clas/
+
+First 50 best horse
+https://racing.hkjc.com/racing/information/Chinese/Horse/LatestOnHorse.aspx?View=Horses/clas/
+
+Horse injury
+https://racing.hkjc.com/racing/information/Chinese/Racing/VeterinaryRecord.aspx
+https://racing.hkjc.com/racing/information/Chinese/Racing/VeterinaryRecord.aspx?RaceDate=2021/04/11&Racecourse=ST&RaceNo=11

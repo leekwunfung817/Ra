@@ -1,4 +1,2 @@
-Horse
-  age
-  past record
-  
+win possibility
+Horse win possibility * Racer win possibility * Trainer win possibility

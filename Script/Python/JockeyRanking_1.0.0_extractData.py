@@ -29,6 +29,7 @@ for file in os.listdir(path):
 			txt = txt.replace('騎師榜','')
 			txt = txt.replace('在港現役騎師','')
 			txt = txt.replace('按百分比顯示:','')
+			txt = txt.replace(',','')
 			txt = nextLine2sinLine(txt)
 			
 			print(txt)

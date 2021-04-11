@@ -27,6 +27,6 @@
 1: Update the status of trainer, horse, and racer.
 	each week
 2: Download history
-	once
+	Each race
 3: Prediction
 	Each race
