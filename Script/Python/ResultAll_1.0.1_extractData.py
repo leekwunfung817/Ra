@@ -4,7 +4,7 @@
 from bs4 import BeautifulSoup
 
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 extractData_1.0.0.py
+# python3 ResultAll_1.0.1_extractData.py
 
 import os
 
@@ -13,8 +13,8 @@ def nextLine2sinLine(txt):
 		txt = txt.replace("\n\n\n", "\n\n")
 	return txt
 
-path = "../../Data/His/ResultsStage_1.0.0/"
-Tpath = "../../Data/His/ResultsStage_1.0.1/"
+path = "../../Data/His/ResultsAllStage_1.0.0/"
+Tpath = "../../Data/His/ResultsAllStage_1.0.1/"
 
 resultTxt = ''
 dirFiles = os.listdir(path)
@@ -31,6 +31,7 @@ for file in dirFiles:
 	for line in fContent.split("\n"):
 		if len(line)==0:
 			if len(arr)==7:
+				# 1 record extracted
 				arr1.append(arr)
 			arr = []
 			continue
