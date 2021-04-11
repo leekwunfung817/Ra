@@ -17,7 +17,11 @@ path = "../../Data/His/ResultsStage_1.0.0/"
 Tpath = "../../Data/His/ResultsStage_1.0.1/"
 
 resultTxt = ''
-for file in os.listdir(path):
+dirFiles = os.listdir(path)
+print(dirFiles)
+dirFiles.sort(reverse=True)
+print(dirFiles)
+for file in dirFiles:
 	fp = path+file
 	print(fp)
 	fContent = open(fp,"r").read()
