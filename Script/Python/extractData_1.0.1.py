@@ -37,7 +37,7 @@ for file in dirFiles:
 		arr.append(line)
 
 	full_txt = file+'\n'
-	for x in arr1[1:]:
+	for x in arr1:
 		txt="\t".join(x)
 		full_txt += txt+'\n'
 
