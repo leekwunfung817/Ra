@@ -1,0 +1,1250 @@
+﻿.Header
+{
+    border-right: #ffffff 1px solid;
+    border-top: #ffffff 1px solid;
+    font-weight: bolder;
+    font-size: 18px;
+    border-left: #ffffff 1px solid;
+    color: #003399;
+    border-bottom: #ffffff 1px solid;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #ffffff;
+    text-align: left;
+    font-variant: normal;
+}
+.subheader
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #204a88;
+    text-align: left;
+    font-variant: normal;
+	padding: 4px; /* Accenture - added for multibrowser support for selecthorse.asp - 29 June 2010 */
+}
+.subheader2
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #204a88;
+    text-align: left;
+    font-variant: normal;
+	padding: 0px; /* SQ#538492 */
+}
+.graysubheader
+{
+    padding-left: 2px;
+    font-weight: none;
+    font-size: 13px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #CCCCCC;
+    text-align: center;
+    font-variant: normal;
+}
+.hssubheader
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #204a88;
+    text-align: center;
+    font-variant: normal;
+	padding: 4px;
+}
+.osubheader
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #008000;
+    text-align: left;
+    font-variant: normal;
+}
+.hsubheader
+{
+    padding-left: 2px;
+    font-weight: normal;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #204a88;
+    text-align: center;
+    font-variant: normal;
+}
+.ohsubheader
+{
+    padding-left: 2px;
+    font-weight: normal;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #004e97;
+    text-align: center;
+    font-variant: normal;
+}
+.bigborder
+{
+    background-color: #204a88;
+}
+.subsubheader
+{
+    font-size: 12px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #e6caae;
+    text-align: center;
+    font-variant: normal;
+}
+.graysubsubheader
+{
+    font-size: 12px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #cccccc;
+    text-align: center;
+    font-variant: normal;
+}
+.subsubheader_griffin
+{
+    font-size: 12px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #aed784;
+    text-align: center;
+    font-variant: normal;
+}
+.normalfont
+{
+    font-size: 13px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #ffffff;
+    text-align: center;
+    font-variant: normal;
+    text-decoration: none;
+}
+.highlightRow
+{
+    color: red;
+    font-family: 細明體_HKSCS,細明體;
+    font-variant: normal;
+}
+
+.JTheader
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #ffcc99;
+    text-align: left;
+    font-variant: normal;
+}
+.JTheader2
+{
+    PADDING-LEFT: 5px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14px;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #eeeeee;
+    TEXT-ALIGN: left;
+    FONT-VARIANT: normal
+}
+.NewHeader
+{
+    border-right: #0099cc 1px solid;
+    border-top: #0099cc 1px solid;
+    padding-left: 4px;
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 1px;
+    border-left: #0099cc 1px solid;
+    color: white;
+    padding-top: 1px;
+    border-bottom: #0099cc 1px solid;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #0099cc;
+    text-align: left;
+    font-variant: normal;
+    text-decoration: none;
+}
+.News_Heading
+{
+    font-weight: bold;
+    font-size: 12pt;
+    color: #000099;
+    font-family: "細明體";
+}
+.News_Sub_Heading
+{
+    font-weight: bold;
+    color: #000099;
+    font-family: "細明體";
+}
+.smallfont
+{
+    font-size: 9pt;
+    line-height: 15px;
+    font-family: "細明體" , "新細明體";
+}
+.body_text_justify
+{
+    font-size: 15px;
+    font-family: "細明體";
+    text-align: justify;
+}
+.eng_arial_sz2
+{
+    font-size: 12px;
+}
+.font10
+{
+    font-size: 12px;
+    font-family: "細明體" , "新細明體";
+    letter-spacing: 3px;
+}
+#divCont
+{
+    left: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    width: 575px;
+    clip: rect(0px 575px 320px 0px);
+    position: absolute;
+    top: 0px;
+    height: 320px;
+}
+#divText
+{
+    left: 0px;
+    position: absolute;
+    top: 0px;
+}
+.foot
+{
+    font-weight: normal;
+    font-size: xx-small;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體" , "新細明體";
+}
+.border
+{
+    border-right: #ff0000;
+    border-top: #ff0000;
+    border-left: #ff0000;
+    border-bottom: #ff0000;
+    background-color: #ff0000;
+}
+.eng_arial_copyright
+{
+    font-size: 10px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+A
+{
+    color: #0066ff;
+    text-decoration: none;
+}
+A:hover
+{
+    color: #9900cc;
+    text-decoration: underline;
+}
+A.menu
+{
+    font-size: 9pt;
+    color: #000000;
+    font-family: "細明體";
+    text-decoration: none;
+}
+A.menu:hover
+{
+    font-size: 9pt;
+    color: #0000cc;
+    font-family: "細明體";
+    text-decoration: underline;
+}
+.body_heading
+{
+    font-weight: bold;
+    font-size: 12pt;
+    color: #000099;
+    font-family: "細明體";
+}
+.body_text
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.body_text_italic
+{
+    font-size: 12pt;
+    line-height: 15pt;
+    font-style: italic;
+    font-family: "細明體";
+}
+.blue_head
+{
+    font-weight: bold;
+    font-size: 11pt;
+    color: #000099;
+    font-style: italic;
+    font-family: "細明體";
+}
+.body_eng_text
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+A.body_text
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 15px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+A.body_text:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 15px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+table_text_two
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+    padding:4px;
+}
+A.table_text_two
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 15px;     
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+    padding: 0;
+}
+A.table_text_two:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 15px;    
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+A.table_eng_text
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 15px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: none;
+}
+A.table_eng_text:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 15px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: underline;
+}
+.general_text
+{
+    font-size: 13px;
+    /* line-height: 17px; Accenture - Multibrowser support fix for selecthorse.asp - 10 June 2010*/
+    font-family: "Arial", "Helvetica", "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.general_bold_text
+{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "Arial", "Helvetica", "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.general_eng_text
+{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.general_eng_bold_text
+{
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+A.general_text
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 17px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+A.general_text:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 17px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+.general_red_text
+{
+    font-size: 13px;
+    color: #990000;
+    line-height: 17px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.general_bold_red_text
+{
+    font-weight: bold;
+    font-size: 13px;
+    color: #990000;
+    line-height: 17px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.underline_text
+{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+.underline_eng_text
+{
+    font-size: 13px;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: underline;
+}
+A.underline_text
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+A.underline_text:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+A.underline_eng_text
+{
+    font-size: 13px;
+    color: #0033cc;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: underline;
+}
+A.underline_eng_text:hover
+{
+    font-size: 13px;
+    color: #0066ff;
+    line-height: 17px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: underline;
+}
+.title_text {
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "Arial", "Helvetica", "sans-serif", "細明體_HKSCS", "細明體", "新細明體";
+    text-decoration: none;
+}
+.title_eng_text
+{
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_text_two
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "Arial", "Helvetica", "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+    padding: 4px; /* Accenture - added for multibrowser support for selecthorse.asp - 10 June 2010 */
+}
+.table_eng_text
+{
+    font-size: 13px;
+    line-height: 15px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.ltable_text
+{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.ltable_eng_text
+{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+A.ltable_text
+{
+    font-size: 16px;
+    color: #0033cc;
+    line-height: 19px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+A.ltable_text:hover
+{
+    font-size: 16px;
+    color: #0066ff;
+    line-height: 19px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+.htable_text
+{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Arial" , "Helvetica" , "sans-serif", "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.htable_bold_text
+{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.htable_eng_text
+{
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.htable_eng_bold_text
+{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: none;
+}
+.htable_eng_rpnarrow_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 12px; FONT-WEIGHT: normal;  FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: none;     letter-spacing: -1px;
+}
+.htable_eng_rpnarrow2_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 12px; FONT-WEIGHT: normal;  FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: none;     letter-spacing: -1px;
+}
+.htable_eng_rp_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 12px; FONT-WEIGHT: normal;  FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: none;     letter-spacing: -1px;
+}
+.htable_eng_rg_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"
+}
+.htable_eng_link_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"
+}
+.htable_link_text {
+	FONT-SIZE: 13px; LINE-HEIGHT: 15px;     font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+}
+
+A.htable_text
+{
+    font-size: 12px;
+    color: #0033cc;
+    line-height: 14px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+A.htable_text:hover
+{
+    font-size: 12px;
+    color: #0066ff;
+    line-height: 14px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: underline;
+}
+.table_small_text
+{
+    font-size: 11px;
+    line-height: 12px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+.table_small_horse_text
+{
+    font-size: 12px;
+    line-height: 12px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+    text-decoration: none;
+}
+A.table_small_horse_text {
+	FONT-SIZE: 12px; COLOR: #0033cc; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: none; 
+}
+A.table_small_horse_text:hover {
+	FONT-SIZE: 12px; COLOR: #0066ff; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: underline; 
+}
+A.htable_eng_rg_text {
+	FONT-SIZE: 12px; COLOR: #0033cc; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: none
+}
+A.htable_eng_rg_text:hover {
+	FONT-SIZE: 12px; COLOR: #0066ff; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: underline
+}
+A.htable_eng_link_text {
+	FONT-SIZE: 12px; COLOR: #0033cc; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: none
+}
+A.htable_eng_link_text:hover {
+	FONT-SIZE: 12px; COLOR: #0066ff; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"; TEXT-DECORATION: underline
+}
+A.htable_link_text {
+	FONT-SIZE: 13px; COLOR: #0033cc; LINE-HEIGHT: 15px;     font-family: "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: none
+}
+A.htable_link_text:hover {
+	FONT-SIZE: 13px; COLOR: #0066ff; LINE-HEIGHT: 15px;     font-family: "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: underline
+}
+
+.table_eng_small_text
+{
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_1_text
+{
+    font-size: 10px;
+    color: red;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_2_text
+{
+    font-size: 10px;
+    color: #FF8C19;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_3_text
+{
+    font-size: 10px;
+    color: #FF8CAA;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_4_text
+{
+    font-size: 10px;
+    color: #636363;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+
+a.table_eng_small_text
+{
+    font-size: 10px;
+    line-height: 12px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+    text-decoration: none;
+}
+.clsHighlightCell
+{
+    font-weight: bold;
+    font-size: 10pt;
+    color: #333399;
+    font-family: "細明體";
+    background-color: #ffe878;
+}
+.body_text_small
+{
+    font-size: 10pt;
+    line-height: 15pt;
+    font-family: "細明體";
+    letter-spacing: 2px;
+}
+.body_text_tiny
+{
+    font-size: 10pt;
+    font-family: "細明體";
+}
+.word_width
+{
+    letter-spacing: 2px;
+}
+.body_capion
+{
+    font-size: 8pt;
+    line-height: 9pt;
+    font-style: italic;
+    font-family: "細明體";
+}
+.navigation
+{
+    font-size: 9pt;
+    font-family: "細明體";
+}
+.News_bullet
+{
+    line-height: 25pt;
+    font-family: "細明體";
+}
+A.whatsnew
+{
+    color: #666666;
+    text-decoration: none;
+}
+A.whatsnew:hover
+{
+    color: #ff0000;
+    text-decoration: none;
+}
+.racedatefont
+{
+    font-size: 10px;
+    color: #ffffff;
+    line-height: 14px;
+    font-family: "細明體";
+}
+.3TJackpotFont
+{
+    font-size: 11px;
+    color: #000066;
+    line-height: 15px;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.mark6Scriptfont
+{
+    font-size: 11px;
+    color: #ffffff;
+    line-height: 17px;
+    font-family: "細明體";
+}
+A.m6datefont
+{
+    font-size: 12px;
+    color: #000000;
+    line-height: 16px;
+    font-family: "細明體";
+    text-decoration: none;
+}
+A.m6datefont:hover
+{
+    font-size: 12px;
+    color: #000099;
+    line-height: 16px;
+    font-family: "細明體";
+    text-decoration: none;
+}
+.body_text_footageNothers
+{
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.menu_text
+{
+    font-weight: normal;
+    font-size: 9pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: 0px;
+}
+.neo_menu_text
+{
+    font-size: 8pt;
+    color: #ffffff;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+.neo_menu_text:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.neo_menu_text:link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+.neo_menu_text:hover
+{
+    color: #c3f3ff;
+    text-decoration: none;
+}
+A.neo_menu_text
+{
+    font-size: 8pt;
+    color: #ffffff;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: 0px;
+    text-decoration: none;
+}
+A.neo_menu_text:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+A.neo_menu_text:link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+A.neo_menu_text:hover
+{
+    color: #c3f3ff;
+    text-decoration: none;
+}
+.rgp
+{
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.rgp_bold
+{
+    font-weight: normal;
+    font-size: 9pt;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.rgp_eng
+{
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    font-style: normal;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.rgp_eng_bold
+{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    font-style: normal;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.rgp_eng_bold2
+{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 12px;
+    font-style: normal;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.rgp2
+{
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.rgp3
+{
+    font-weight: normal;
+    font-size: 5px;
+    line-height: 8px;
+    font-style: normal;
+    font-family: "Arial";
+    letter-spacing: -1px;
+}
+.rgp4
+{
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.rgp5
+{
+    font-weight: normal;
+    font-size: 8pt;
+    line-height: normal;
+    font-style: normal;
+    font-family: "細明體";
+    letter-spacing: -1px;
+}
+.bottom_text
+{
+    font-size: 12px;
+    font-family: "細明體_HKSCS" , "細明體" , "新細明體";
+}
+.bottom_eng_text
+{
+    font-size: 12px;
+    line-height: normal;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.bottom_eng_text_w
+{
+    font-size: 9pt;
+    color: #ffffff;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.spacer
+{
+    font-size: 6px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.commonspace
+{
+    font-size: 10px;
+    line-height: 10px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.table_small_horse_gray_text {
+	FONT-SIZE: 12px; COLOR: #888888; LINE-HEIGHT: 12px; FONT-FAMILY: "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: none
+}
+.table_small_horse_pink_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 12px; FONT-FAMILY: "細明體_HKSCS" , "細明體" , "新細明體"; BACKGROUND-COLOR: #ebccf5; TEXT-DECORATION: none
+}
+A.table_small_horse_pink_text {
+	FONT-SIZE: 12px; COLOR: #0033cc; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; BACKGROUND-COLOR: #ebccf5; TEXT-DECORATION: none; 
+}
+A.table_small_horse_pink_text:hover {
+	FONT-SIZE: 12px; COLOR: #0066ff; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; BACKGROUND-COLOR: #ebccf5; TEXT-DECORATION: underline; 
+}
+.table_result_horse_text {
+	FONT-SIZE: 12px; LINE-HEIGHT: 12px; FONT-FAMILY: "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: none
+}
+A.table_result_horse_text {
+	FONT-SIZE: 12px; COLOR: #003366; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: none; 
+}
+A.table_result_horse_text:hover {
+	FONT-SIZE: 12px; COLOR: #0066ff; LINE-HEIGHT: 12px; FONT-FAMILY:  "細明體_HKSCS" , "細明體" , "新細明體"; TEXT-DECORATION: underline; 
+}
+.table_result_point_text {
+	FONT-SIZE: 11px; COLOR: #990000; LINE-HEIGHT: 11px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-ALIGN: center; 
+}
+.table_normal_odds_text {
+	FONT-SIZE: 12px; COLOR: #CC0000; LINE-HEIGHT: 12px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-ALIGN: center; 
+}
+.table_normal_odds_gray_text {
+	FONT-SIZE: 12px; COLOR: #888888; LINE-HEIGHT: 12px; FONT-FAMILY: "Arial", "Helvetica", "sans-serif"; TEXT-ALIGN: center; 
+}
+.vr_body_heading
+{
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: "細明體" , "新細明體";
+}
+.vr_sub_heading
+{
+    font-weight: bold;
+    font-size: 12pt;
+    font-family: "細明體" , "新細明體";
+}
+.vr_body_text
+{
+    font-size: 16px;
+    LINE_HEIGHT: 19px;
+    font-family: "Arial" , "Helvetica" , "sans-serif";
+}
+.vr_style2 {	font-size:13px; font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.vr_style3 {	font-size:13px; font-family: Arial, Helvetica, sans-serif
+
+}
+.vr_style5 {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.vr_style6 {color: #000000}
+.htable_eng_text2 {
+	FONT-SIZE: 12px; COLOR: #c94200; LINE-HEIGHT: 14px; FONT-FAMILY: "Arial" , "Helvetica" , "sans-serif"
+}
+.resultsubheader
+{
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+    font-family: 細明體_HKSCS,細明體;
+    background-color: #204a88;
+    text-align: left;
+    font-variant: normal;
+}
+
+
+.divTable {
+    display: table;
+}
+
+.divTable1 {
+    display: table;
+    width: 760px;
+}
+
+.divTable2 {
+    display: table;
+    width: 970px;
+}
+
+.divTable3 {
+    display: table;
+    width: 760px;
+    border-spacing: 1px;
+}
+
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableRow1 {
+    display: table-row;
+    vertical-align: top;
+}
+
+.divTableCell {
+    display: table-cell;
+}
+
+.divTableCell1 {
+    display: table-cell;
+    width: 5%;
+}
+
+.divTableCell2 {
+    display: table-cell;
+    width: 252px;
+    vertical-align: top;
+}
+
+.divTableCell3 {
+    display: table-cell;
+    width: 243px;
+    vertical-align: top;
+}
+
+.divTableCell4 {
+    display: table-cell;
+    border-spacing: 3px;
+}
+
+.divTableCell5 {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.divTableCell5 {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.divTableCell6 {
+    display: table-cell;
+    width: 498px;
+    vertical-align: top;
+}
+
+.divTableCell7 {
+    display: table-cell;
+    width: 135px;
+}
+
+.divTableCell8 {
+    display: table-cell;
+    width: 96px;
+}
+
+.divTableCell9 {
+    display: table-cell;
+    width: 92px;
+}
+
+.divTableCell10 {
+    display: table-cell;
+    width: 151px;
+}
+
+.divTableCell11 {
+    display: table-cell;
+    width: 365px;
+}
+
+.divTableCell12 {
+    display: table-cell;
+    width: 5%;
+}
+
+.divTableCell13 {
+    display: table-cell;
+    text-align: right;
+}
+
+.remarks_span {
+    font-size: small;
+}
+
+.remarks_table_row {
+    display: table-row;
+    font-size: 13px;
+}
+
+.divGearNameCell {
+    display: table-cell;
+    width: 30px;
+    background-color: #B9DCFF;
+    height: 22px;
+}
+
+.divGearCell1 {
+    display: table-cell;
+    width: 148px;
+    background-color: #FFFFDD;
+    height: 22px;
+}
+
+.divGearCell2 {
+    display: table-cell;
+    width: 158px;
+    background-color: #FFFFDD;
+    height: 22px;
+}
+
+.divGearCell3 {
+    display: table-cell;
+    width: 178px;
+    background-color: #FFFFDD;
+    height: 22px;
+}
+
+.select1 {
+    font-size: 10pt;
+}
+
+.gear_span1 {
+    color: #000000; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12px;
+}
+
+.gear_span2 {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 12px;
+}
+
+.bigborder1 {
+    border: 0;
+    border-spacing: 1px;
+    padding: 1px;
+    background-color: #204a88;
+    width: 970px;
+}
+
+.record_tr1 {
+    height: 18px;
+}
+
+.record_tr2 {
+    background-color: #F3F1E6;
+}
+
+.record_tr3 {
+    background-color: #E3E1D7;
+}
+
+.gear_table {
+    display: table;
+    width: 575px;
+    border: 1px solid #804000;
+    border-spacing: 1px;
+}
+
+.gear_table1 {
+    border: 1px solid #804000;
+    border-spacing: 0;
+}
+
+.gear_table2 {
+    display: table;
+    width: 562px;
+    padding: 3px;
+    text-align: left;
+    border-spacing: 4px;
+}
+
+.gear_table_cell {
+    display: table-cell;
+    width: 569px;
+}
+
+td.gear1 {
+    width: 148px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    background-color: #FFFFDD;
+    height: 18px;
+}
+
+td.gear2 {
+    width: 30px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    background-color: #B9DCFF;
+    height: 22px;
+}
+
+td.gear3 {
+    width: 178px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    background-color: #FFFFDD;
+    height: 22px;
+}
+
+td.gear4 {
+    width: 158px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 10px;
+    background-color: #FFFFDD;
+    height: 22px;
+}

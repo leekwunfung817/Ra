@@ -1,8 +1,4 @@
 
-# from pyvirtualdisplay import Display
-# display = Display(visible=0, size=(800, 600))
-# display.start()
-
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
 # python3 JockeyRanking_download.py
 import time

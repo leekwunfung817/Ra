@@ -1,2 +1,9 @@
 win possibility
 Horse win possibility * Racer win possibility * Trainer win possibility
+
+Process 1
+	JockeyRanking
+	TrainerRanking
+Process 2
+	ResultAll
+Process 3

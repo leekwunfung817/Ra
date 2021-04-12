@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {background-image:url(../images/racing/bg.gif)}
+h1 {background:#244FA1;}
+h2 {color:#244FA1;}
+h3 {color:#244FA1;}
+h4 {color: #244fa1; font-size: 16px; line-height: 20px; padding: 0 0 4px;}
+h4.dashLine {background: url("//entertainment.hkjc.com/entertainment/common/english/images/dash_2.gif") repeat-x scroll 0 100% transparent;}
+h5 {color: #244fa1; font-size: 15px; line-height: 16px; margin: 10px 0; padding: 5px 0;}
+h5.subhead-1 {color: #6185c8; font-size: 15px; line-height: 16px; margin: 10px 0; padding: 5px 0;}
+h5.subhead-2 {color: #000; font-size: 14px; margin: 0; padding: 0 0 20px 0;}
+p {padding:0 0 5px 0; margin:0;}
+a {color:#244FA1;}
+a:hover {color:#244FA1;}
+
+#fontSizeContainer {font-size: 12px; line-height: 150%; text-align: right;}
+#fontSizeContainer div span {color: #999999; float: left; margin-right: 10px;}
+
+#seo {background:url(../images/racing/seo_bg.gif) repeat-x #D9E7F2;}
+#seo .content div {background:url(../images/racing/seo_stroke.gif) no-repeat right top;}
+#seo .content dl dt {color:#4185B8;}
+#seo .content a {color:#2774AD;}
+
+#leftNav dl {border-bottom:1px solid #244FA1;}
+#leftNav dt {border-bottom:2px solid #244FA1;}
+#leftNav dd dl {background: url(../images/navigation/dash_left.gif) repeat-x 0 0 #dee5f1;}
+#leftNav dd dl dd a:hover, #leftNav dd dl dd a.active {color:#244FA1;}
+
+#footer .nav .content a, #footer .nav .copyright {color:#00326F;}
+
+.btnGrey, .btnCal {margin-left:5px; display:inline-block; text-align:center; color:#FFF; text-decoration:none; font-size:12px; background:url(../images/racing/btn_blue_l.gif) no-repeat 0 0;}
+.btnGrey span, .btnCal span {display:inline-block;; height:18px; padding:3px 8px 0 10px; cursor:pointer; background:url(../images/racing/btn_blue_r.gif) no-repeat 100% 0;}
+.btnGrey:hover, .btnCal:hover {text-decoration:none;}
+.btnGrey {background:url(../images/racing/btn_grey_l.gif) no-repeat 0 0;}
+.btnGrey span {background:url(../images/racing/btn_grey_r.gif) no-repeat 100% 0;}
+
+a.btn {background:url(../images/racing/btn_bg_L.gif) no-repeat;}
+a.btn span {background:url(../images/racing/btn_bg_R.gif) no-repeat right top;}
+
+/* Latest Mark Six starts */
+#latestMarkSix {background-color:#DEE5F1;}
+#latestMarkSix a {color:#244FA1;}
+/* Latest Mark Six ends */
+
+/* Home components starts */
+#livecentre, #fixture, #leaguetable {background:#E9E9E9; font-size:12px;}
+#livecentre h1, #fixture h1, #leaguetable h1 {width:auto; background:#244FA1; padding:7px 10px;}
+/* Home components ends */
+
+/* Calendar starts */
+.calendar .month {background-color:#D3DCEC;}
+.calendar table td.highlight {color:#244FA1;}
+.calendar table td.today {background-color:#244FA1;}
+.calendar table td.today a {color:#fff;}
+.calendarEvents {background-color:#F2F9FD;}
+.calendarEvents ul li a {background:url(../images/racing/arrow.gif) no-repeat 0 6px;}
+.calendar .eventsPopup {border:#244FA1 2px solid;}
+/* Calendar starts */
+
+
+/* facilities photos starts */
+#newsPhoto img {float:none; margin:0; display:block;}
+#newsPhoto .photoMain {width:260px; height:200px; position:relative;}
+#newsPhoto .photoMain img {position:absolute; top:0; left:0;}
+#newsPhoto .photoMain a {display:none;}
+#newsPhoto .photoCaption {float:right; background-color:#E9E9E9; color:#666; padding:10px; margin:0 0 0 0; width:250px;}
+#newsPhoto .photoCaption span {float:right;}
+#newsPhoto .photoCaption span a {color:#666;}
+/* facilities photos ends */
+
+/* Addon to global.css */
+/* Left Nav starts */
+#leftNav div {display:block;}
+#leftNav dt {padding:0 0 4px 4px; vertical-align:middle; color:#244fa1; font-size:15px; font-weight:700; min-height: 20px;	height: auto !important; height: 20px; text-transform:uppercase; line-height:13px; overflow:visible;}
+#leftNav dt span {width:1px; height:1px; display:inline-block;}
+#leftNav dd {background:url(../images/dash_1.gif) bottom repeat-x;}
+#leftNav dd.last {background:none;}
+#leftNav dd a {width:auto; display:block; padding:10px 5px; font-size:12px; font-weight:700; color:#666;}
+#leftNav dd a:hover, #leftNav dd a.active {color:#244fa1; text-decoration:none;}
+#leftNav dd dl {font-size:12px; padding:5px 0; border:none; display:none;}
+#leftNav dd dl dd {background:none;}
+#leftNav dd dl dd a {color:#333333; padding-top:3px; padding-bottom:3px; font-weight:400;}
+#leftNav dd dl dd a:hover, #leftNav dd dl dd a.active {font-weight:700;}
+/* Left Nav ends */
