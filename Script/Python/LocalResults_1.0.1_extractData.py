@@ -47,5 +47,7 @@ for file in dirFiles:
 		full_txt += txt+'\n'
 
 	resultTxt+=full_txt+'\n'
-
+resultTxt = resultTxt.replace('][',',')
+resultTxt = resultTxt.replace('[','')
+resultTxt = resultTxt.replace(']','')
 open('../../Data/His/'+func+'_1.0.1/result.txt','w+').write(resultTxt)

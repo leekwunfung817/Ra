@@ -13,3 +13,9 @@
 8: Test the formular with replacing previous dummy test
 9: Test the accuracy of the formular and the whole system
 10: Improve the system (goto step 7)
+
+
+Data (Extract Transform load) ETL
+=== 
+skip data file when data file exist
+when the data file not correct, please delete it.
