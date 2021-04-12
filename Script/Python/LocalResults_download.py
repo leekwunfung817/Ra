@@ -37,7 +37,7 @@ def HisResAll(y,m,d,s):
 		driver.close()
 		return txt
 	except Exception as e:
-		print(e.message)
+		print(e)
 	return None
 
 def RememHis(y,m,d):
