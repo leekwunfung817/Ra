@@ -23,15 +23,17 @@ for file in os.listdir(path):
 		arr = soup.select('table[class*="table_bd"]')
 		# print(arr,len(arr))
 		# i = 0 
-		for EachPart in arr:
-			txt = EachPart.get_text()
-			txt = txt.replace(' ','')
-			txt = txt.replace('騎師榜','')
-			txt = txt.replace('在港現役騎師','')
-			txt = txt.replace('按百分比顯示:','')
-			txt = txt.replace(',','')
-			txt = nextLine2sinLine(txt)
-			
-			print(txt)
-		# 	i = i + 1
-			open(Tpath+file.replace('.html',''),'w+').write(txt)
+		EachPart = arr[0]
+
+		tfp = Tpath+file.replace('.html','')
+		if os.path.isfile(tfp):
+			continue
+		txt = EachPart.get_text()
+		txt = txt.replace(' ','')
+		txt = txt.replace('騎師榜','')
+		txt = txt.replace('在港現役騎師','')
+		txt = txt.replace('按百分比顯示:','')
+		txt = txt.replace(',','')
+		txt = nextLine2sinLine(txt)
+		print(txt)
+		open(tfp,'w+').write(txt)

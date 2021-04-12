@@ -24,11 +24,16 @@ for file in os.listdir(path):
 		arr = soup.select('div[class*="result_content"]')
 		print(len(arr))
 		i = 0 
-		for EachPart in arr:
-			txt = EachPart.get_text()
-			txt = nextLine2sinLine(txt)
-			print(txt)
-			i = i + 1
-			open(Tpath+file.replace('.html','')+'_'+str(i),'w+').write(txt)
+
+		EachPart = arr[0]
+
+		tfp = Tpath+file.replace('.html','')+'_'+str(i)
+		if os.path.isfile(tfp):
+			continue
+		txt = EachPart.get_text()
+		txt = nextLine2sinLine(txt)
+		print(txt)
+		i = i + 1
+		open(tfp,'w+').write(txt)
 
 	# break

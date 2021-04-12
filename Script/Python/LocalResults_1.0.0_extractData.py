@@ -17,6 +17,10 @@ Tpath = "../../Data/His/"+func+"_1.0.0/"
 for file in os.listdir(path):
 	if file.endswith(".html"):
 		fp = path+file
+		tfp = Tpath+file.replace('.html','')
+		if os.path.isfile(tfp):
+			continue
+
 		html_doc = open(fp,"r").read()
 		
 		print(fp)
@@ -44,5 +48,5 @@ for file in os.listdir(path):
 		txt = txt.replace(' ','')
 		txt = txt.replace(',','')
 		txt = nextLine2sinLine(txt)
-		open(Tpath+file.replace('.html',''),'w+').write(txt)
+		open(tfp,'w+').write(txt)
 	# break
