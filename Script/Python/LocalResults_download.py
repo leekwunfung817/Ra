@@ -25,7 +25,13 @@ import os.path
 
 
 def HisResAll(y,m,d,s):
-	binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
+	# Mac
+	driver='MacOS/chromedriver.89.0.4389.23'
+
+	# Win
+	driver='Win/chromedriver.89.0.4389.23.exe'
+
+	binary_path='./'+driver
 	url="https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate="+y+"/"+m+"/"+d+"&RaceNo="+s
 	print(url)
 	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'

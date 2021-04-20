@@ -9,6 +9,13 @@ def nextLine2sinLine(txt):
 	for x in range(1,10):
 		txt = txt.replace("\n\n\n", "\n\n")
 	return txt
+
+def RemoveSpliter(resultTxt):
+	resultTxt = resultTxt.replace('][',',')
+	resultTxt = resultTxt.replace('[','')
+	resultTxt = resultTxt.replace(']','')
+	return resultTxt
+	
 func = 'LocalResults'
 
 path = "../../Data/His/"+func+"_1.0.0/"
@@ -30,6 +37,7 @@ for file in dirFiles:
 	fp = path+file
 	print(fp)
 	fContent = open(fp,"r").read()
+	fContent = RemoveSpliter(fContent)
 
 	arr1 = []
 	arr = []
@@ -47,7 +55,4 @@ for file in dirFiles:
 		full_txt += txt+'\n'
 
 	resultTxt+=full_txt+'\n'
-resultTxt = resultTxt.replace('][',',')
-resultTxt = resultTxt.replace('[','')
-resultTxt = resultTxt.replace(']','')
 open('../../Data/His/'+func+'_1.0.1/result.txt','w+').write(resultTxt)
