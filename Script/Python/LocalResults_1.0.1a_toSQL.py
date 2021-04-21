@@ -24,13 +24,14 @@ def RemoveSpliter(resultTxt):
 	return resultTxt
 def createTbStr(titles):
 	titles.append('dt')
-	sql = 'CREATE TABLE '+func+' ('
+	sql = 'CREATE TABLE IF NOT EXISTS '+func+' ('
 	begin = False
 	for title in titles:
 		if begin:
 			sql+=','
 		sql+='`'+title+'` TEXT'
 		begin = True
+	sql+=',PRIMARY KEY("馬名","dt")'
 	sql+=')'
 	return sql
 		
@@ -58,8 +59,8 @@ print(dirFiles)
 titles_flag = False
 titles = []
 columns = []
-# 'DROP TABLE '+func
-sqlArr = []
+
+sqlArr = ['DROP TABLE '+func]
 for file in dirFiles:
 	title_len = 7
 	content_len = 6
