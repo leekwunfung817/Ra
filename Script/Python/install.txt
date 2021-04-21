@@ -12,3 +12,5 @@ pip3 install pyvirtualdisplay
 
 
 pip3 install beautifulsoup4
+
+
