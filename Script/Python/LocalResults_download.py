@@ -6,6 +6,9 @@
 # display = Display(visible=0, size=(800, 600))
 # display.start()
 
+# cd C:\Users\ivan.lee.PRIMECREATION\Documents\ivan\Projects source\Others\h\Ra\Script\Python"
+# python3 LocalResults_download.py
+
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
 # python3 LocalResults_download.py
 import time
@@ -36,9 +39,13 @@ def HisResAll(y,m,d,s):
 	print(url)
 	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
 	try:
+		print('Point 1')
 		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
+		print('Point 2')
 		driver.get(url)
+		print('Point 3')
 		time.sleep(5)
+		print('Point 4')
 		txt=driver.page_source
 		driver.close()
 		return txt
@@ -57,12 +64,18 @@ def RememHis(y,m,d):
 		txt = ''
 		if not isNone:
 			txt = HisResAll(y,m,d,str(x))
+		else:
+			# Whole day no data, then leave
+			return
+		if len(txt)==0:
+			# Whole day no data, then leave
+			return
 		if '<div class="performance">' not in txt:
 			isNone = True
 			txt = ''
 
-		f = open(filename, "w+")
-		f.write(txt)
+		f = open(filename, "wb+")
+		f.write(txt.encode("utf-8"))
 		f.close()
 
 RememHis('2021','04','11')
