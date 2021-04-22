@@ -21,9 +21,11 @@ for file in os.listdir(path):
 		if os.path.isfile(tfp):
 			continue
 
-		html_doc = open(fp,"r").read()
+		html_doc = open(fp,"rb").read().decode("utf-8")
 		
-		print(fp)
+		print(fp,len(html_doc))
+		if len(html_doc)==0:
+			continue
 		soup = BeautifulSoup(html_doc, 'html.parser')
 		soup.find('div').decompose()
 		arr = soup.select('table[class*="table_bd"]')[0]
@@ -48,5 +50,5 @@ for file in os.listdir(path):
 		txt = txt.replace(' ','')
 		txt = txt.replace(',','')
 		txt = nextLine2sinLine(txt)
-		open(tfp,'w+').write(txt)
+		open(tfp,'wb+').write(txt.encode("utf-8"))
 	# break

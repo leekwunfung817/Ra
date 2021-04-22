@@ -14,6 +14,7 @@ def RemoveSpliter(resultTxt):
 	resultTxt = resultTxt.replace('][',',')
 	resultTxt = resultTxt.replace('[','')
 	resultTxt = resultTxt.replace(']','')
+	resultTxt = resultTxt.replace('\r','')
 	return resultTxt
 	
 func = 'LocalResults'
@@ -36,7 +37,7 @@ for file in dirFiles:
 
 	fp = path+file
 	print(fp)
-	fContent = open(fp,"r").read()
+	fContent = open(fp,"rb").read().decode('utf-8')
 	fContent = RemoveSpliter(fContent)
 
 	arr1 = []
@@ -55,4 +56,4 @@ for file in dirFiles:
 		full_txt += txt+'\n'
 
 	resultTxt+=full_txt+'\n'
-open('../../Data/His/'+func+'_1.0.1/result.txt','w+').write(resultTxt)
+open('../../Data/His/'+func+'_1.0.1/result.txt','wb+').write(resultTxt.encode('utf-8'))

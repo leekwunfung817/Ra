@@ -35,7 +35,7 @@ def createTbStr(titles):
 	sql+=')'
 	return sql
 		
-def arr2joinSQLStr(titles,columns):
+def arr2joinSQLStr(titles,columns,asso):
 	sql = 'INSERT INTO '+func+' SELECT '
 	begin = False
 	for x in range(0,len(titles)):
@@ -49,6 +49,12 @@ def arr2joinSQLStr(titles,columns):
 	# '(`'+titles.join('`,`')+'`)'
 	# '(\''+columns.join('\',\'')+'\')'
 	return sql
+
+def arr2Asso(titles,columns):
+	asso={}
+	for i in range(0,len(titles)):
+		asso[titles[i]]=columns[i]
+	return asso
 
 # resultTxt = ''
 dirFiles = os.listdir(path)
@@ -83,7 +89,11 @@ for file in dirFiles:
 			if titles_flag:
 				columns=arr
 				columns.append(fp)
-				sqlArr.append(arr2joinSQLStr(titles,arr))
+				# asso={}
+				# for i in range(0,len(titles)):
+				# 	asso[titles[i]]=arr[i]
+					
+				sqlArr.append(arr2joinSQLStr(titles,arr, arr2Asso(titles,arr) ))
 			else:
 				titles=arr
 				sqlArr.append(createTbStr(titles))
@@ -119,7 +129,7 @@ path = "../../Data/His/"
 
 print("Successfully Connected to SQLite")
 
-sqliteConnection = sqlite3.connect(path+'LocalResults_1.0.1a.db')
+sqliteConnection = sqlite3.connect(path+'Ra.db')
 
 for sqlite_insert_query in sqlArr:
 	try:

@@ -44,7 +44,7 @@ def HisResAll(y,m,d,s):
 		print('Point 2')
 		driver.get(url)
 		print('Point 3')
-		time.sleep(5)
+		time.sleep(8)
 		print('Point 4')
 		txt=driver.page_source
 		driver.close()
@@ -55,7 +55,7 @@ def HisResAll(y,m,d,s):
 
 def RememHis(y,m,d):
 	isNone = False
-	print(y+m+d)
+	# print(y+m+d)
 	funcName='LocalResults'
 	for x in range(1,11):
 		filename = "../../Data/His/"+funcName+"/"+y+m+d+"_"+str(x)+".html"
