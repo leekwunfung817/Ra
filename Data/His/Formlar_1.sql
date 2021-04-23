@@ -57,4 +57,4 @@ RandPredictHistory as (
 Predicted as (
 	select * from RandPredictHistory
 )
-select * from Predicted;
+select (select dt from RandLast100LocalResults) a,(select dt from RandLast100LocalResults) b from RandLast100LocalResults;
