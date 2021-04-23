@@ -19,3 +19,38 @@ Data (Extract Transform load) ETL
 === 
 skip data file when data file exist
 when the data file not correct, please delete it.
+
+Step
+===== ===== ===== ===== ===== ===== ===== ===== ===== ===== 
+
+=== First step
+1: Get History
+
+=== type 1
+2: Train
+3: Get model
+4: Use model
+
+=== type 2
+2: Make algorithm
+3: Make formular
+4: Calculate result
+
+=== Result prediction
+5: Get next race data
+6: Predict data
+=== after race
+7: tune countermeasure
+8: Change the algorithm
+
+
+ ===== ===== ===== ===== ===== 
+ ===== ===== ===== ===== ===== 
+ 3 type process
+
+1: Update the status of trainer, horse, and racer.
+	each week
+2: Download history
+	Each race
+3: Prediction
+	Each race

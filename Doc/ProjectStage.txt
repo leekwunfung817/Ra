@@ -1,0 +1,2 @@
+Create view for apply formula
+	find the - not accurate rates (NAR)
