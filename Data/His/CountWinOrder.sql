@@ -1,16 +1,20 @@
 What is 名次=WV?
 
-SELECT avg(o) o,hn,count(*) c from 
+DROP VIEW OrderHorNam;
+CREATE VIEW OrderHorNam AS
+SELECT avg(o) o,n,count(*) c from 
 (
 	SELECT 
 		CAST(名次 AS INTEGER) o,
-		馬名 hn
+		馬名 n
 	FROM LocalResults 
 )
 where o>0
-group by hn
+group by n
 order by o asc;
 
+DROP VIEW OrderRadNam;
+CREATE VIEW OrderRadNam AS
 SELECT avg(o) o,n,count(*) c from 
 (
 	SELECT 
@@ -22,6 +26,8 @@ where o>0
 group by n
 order by o asc;
 
+DROP VIEW OrderTraNam;
+CREATE VIEW OrderTraNam AS
 SELECT avg(o) o,n,count(*) c from 
 (
 	SELECT 
@@ -33,3 +39,5 @@ where o>0
 group by n
 order by o asc;
 
+
+select o from OrderHorNam;
