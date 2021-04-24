@@ -123,7 +123,7 @@ for file in dirFiles:
 
 import sqlite3
 
-path = "../../Data/His/"
+path = "../../../Ra_calculate/"
 
 
 
