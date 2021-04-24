@@ -8,16 +8,21 @@ win possibility
 factor's effectiveness proportion calculations
 Each of the factor mentioned above, 
 
-1 : How accurate of its rank
-2 : To what extent to effect the result.
+1 : How accurate of average rank to predict real rank?
+2 : To what extent to effect the result?
+
+
+1 : Horse mark = (mark-max mark)/(min mark-mark)
+2 : Racer mark = (mark-max mark)/(min mark-mark)
+3 : Trainer mark  = (mark-max mark)/(min mark-mark)
 
 	Distance=Real rank-Predicted rank
 	(All prediction) avgerage(Distance) - not accurate rates / not effected rates
 	>> not accurate rates (NAR)
 
-1 : Horse win possibility (HWP) = Horse rank / NAR
-2 : Racer win possibility (RWP) = Racer rank / NAR
-3 : Trainer win possibility (TWP) = Trainer rank / NAR
+1 : Horse win possibility (HWP) = Horse mark / NAR
+2 : Racer win possibility (RWP) = Racer mark / NAR
+3 : Trainer win possibility (TWP) = Trainer mark / NAR
 
 RankMark=HWP*RWP*TWP
 RankMark Sorting for predict rank ( Final result - (FR) )
