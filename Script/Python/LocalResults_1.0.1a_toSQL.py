@@ -1,6 +1,6 @@
 
 from bs4 import BeautifulSoup
-
+import HelperSQL
 # cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
 # python3 LocalResults_1.0.1_toSQL.py
 
@@ -22,34 +22,7 @@ def RemoveSpliter(resultTxt):
 	resultTxt = resultTxt.replace(']','')
 	resultTxt = resultTxt.replace('\r','')
 	return resultTxt
-def createTbStr(titles):
-	titles.append('dt')
-	sql = 'CREATE TABLE IF NOT EXISTS '+func+' ('
-	begin = False
-	for title in titles:
-		if begin:
-			sql+=','
-		sql+='`'+title+'` TEXT'
-		begin = True
-	sql+=',PRIMARY KEY("馬名","dt")'
-	sql+=')'
-	return sql
 		
-def arr2joinSQLStr(titles,columns,asso):
-	sql = 'INSERT INTO '+func+' SELECT '
-	begin = False
-	for x in range(0,len(titles)):
-		if begin:
-			sql+=','
-		# print(x)
-		sql+='\''+columns[x]+'\' `'+titles[x]+'`'
-		begin = True
-	sql+=';'
-	# print(txt)
-	# '(`'+titles.join('`,`')+'`)'
-	# '(\''+columns.join('\',\'')+'\')'
-	return sql
-
 def arr2Asso(titles,columns):
 	asso={}
 	for i in range(0,len(titles)):
@@ -93,10 +66,10 @@ for file in dirFiles:
 				# for i in range(0,len(titles)):
 				# 	asso[titles[i]]=arr[i]
 					
-				sqlArr.append(arr2joinSQLStr(titles,arr, arr2Asso(titles,arr) ))
+				sqlArr.append(HelperSQL.arr2joinSQLStr(titles,arr, arr2Asso(titles,arr) ))
 			else:
 				titles=arr
-				sqlArr.append(createTbStr(titles))
+				sqlArr.append(HelperSQL.createTbStr(titles,',PRIMARY KEY("馬名","dt")'))
 			arr1.append(arr)
 			arr = []
 			titles_flag = True
