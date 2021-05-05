@@ -6,12 +6,13 @@
 # display = Display(visible=0, size=(800, 600))
 # display.start()
 command = '''
-cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra/Script/Python"
-python3 LocalResults_download.py
-
 
 cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
 python3 LocalResults_download.py
+
+cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra_deploy/Script/Python
+python LocalResults_download.py
+python LocalResults_1.0.0_extractData.py
 
 
 '''
@@ -28,48 +29,40 @@ chrome_options.add_argument("--window-size=5,5")
 
 import os.path
 
+from bs4 import BeautifulSoup
 
 # from chromedriver_py import binary_path # this will get you the path variable
 
+import HelperFile
 
+commonURL='https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx'
+def HisResDate():
+	html = HelperFile.Request(commonURL)
+	html = str(BeautifulSoup(html, 'html.parser').select('select[id*="selectId"]')[0])
+	arr = BeautifulSoup(html, 'html.parser').select('option')
+	for x in arr:
+		x=str(x.get_text())
+		ar=x.split('/')
+		ar=[ar[2],ar[1],ar[0]]
+		# print(ar)
+		RememHis(ar[0],ar[1],ar[2])
 
-def HisResAll(y,m,d,s):
-	# Mac
-	driver='MacOS/chromedriver.89.0.4389.23'
-
-	# Win
-	driver='Win/chromedriver.89.0.4389.23.exe'
-
-	binary_path='./'+driver
-	url="https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx?RaceDate="+y+"/"+m+"/"+d+"&RaceNo="+s
-	print(url)
-	# binary_path='/Users/leekwunfung/Documents/GitHub/Ra/Script/Python/MacOS/chromedriver.89.0.4389.23'
-	try:
-		print('Point 1')
-		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
-		print('Point 2')
-		driver.get(url)
-		print('Point 3')
-		time.sleep(8)
-		print('Point 4')
-		txt=driver.page_source
-		driver.close()
-		return txt
-	except Exception as e:
-		print(e)
-	return None
+def HisRes(y,m,d,s):
+	url=commonURL+"?RaceDate="+y+"/"+m+"/"+d+"&RaceNo="+s
+	return HelperFile.Request(url)
 
 def RememHis(y,m,d):
 	isNone = False
 	# print(y+m+d)
 	funcName='LocalResults'
+	path="../../Data/His/"+funcName+"/"
 	for x in range(1,11):
-		filename = "../../Data/His/"+funcName+"/"+y+m+d+"_"+str(x)+".html"
+		filename = path+y+m+d+"_"+str(x)+".html"
 		if os.path.isfile(filename):
 			return
 		txt = ''
 		if not isNone:
-			txt = HisResAll(y,m,d,str(x))
+			txt = HisRes(y,m,d,str(x))
 		else:
 			# Whole day no data, then leave
 			return
@@ -83,7 +76,7 @@ def RememHis(y,m,d):
 		f = open(filename, "wb+")
 		f.write(txt.encode("utf-8"))
 		f.close()
-
+HisResDate()
 RememHis('2021','04','11')
 RememHis('2021','04','10')
 RememHis('2021','04','08')

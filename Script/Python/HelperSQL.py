@@ -33,7 +33,7 @@ def createTbStr(func,titles,extension=''):
 def arr2joinSQLStr(func,titles,columns):
 	if len(titles)!=len(columns):
 		print('Lenght:',len(titles),len(columns))
-		print('Lenght:',(titles),(columns))
+	print('Lenght:',(titles),(columns))
 
 	sql = 'INSERT INTO '+func+' SELECT '
 	begin = False

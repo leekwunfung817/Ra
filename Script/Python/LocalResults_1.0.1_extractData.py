@@ -1,8 +1,15 @@
 from bs4 import BeautifulSoup
 
-# cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 LocalResults_1.0.1_extractData.py
 
+command = '''
+cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
+python3 LocalResults_1.0.1_extractData.py
+
+cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra_deploy/Script/Python
+python LocalResults_1.0.1_extractData.py
+
+
+'''
 import os
 
 def nextLine2sinLine(txt):
