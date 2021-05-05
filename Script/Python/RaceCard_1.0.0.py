@@ -73,6 +73,6 @@ racecardtitle_=racecardtitle_
 sql=HelperSQL.createTbStr(func,racecardtitle_.split(','),',PRIMARY KEY(`dt`,`raceno`,`騎師`)')
 HelperSQL.BatchSQL([sql])
 out=racecardtitle_+'\n'+out
-HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out)
+HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out.replace(',','\t'))
 
 # HelperSQL.createTbStr(titles,',PRIMARY KEY("馬名","dt")')
