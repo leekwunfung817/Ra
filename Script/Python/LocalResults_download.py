@@ -5,12 +5,18 @@
 # from pyvirtualdisplay import Display
 # display = Display(visible=0, size=(800, 600))
 # display.start()
+command = '''
+cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra/Script/Python"
+python3 LocalResults_download.py
 
-# cd C:\Users\ivan.lee.PRIMECREATION\Documents\ivan\Projects source\Others\h\Ra\Script\Python"
-# python3 LocalResults_download.py
 
-# cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 LocalResults_download.py
+cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
+python3 LocalResults_download.py
+
+
+'''
+
+
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options

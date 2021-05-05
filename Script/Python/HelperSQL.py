@@ -2,7 +2,7 @@
 
 import sqlite3
 
-def BatchSQL(sqls, path = "../../Data/His/Ra.db"):
+def BatchSQL(sqlArr, path = "../../../Ra_calculate/Ra.db"):
 	sqliteConnection = sqlite3.connect(path)
 	print("Successfully Connected to SQLite")
 	for sqlite_insert_query in sqlArr:
@@ -18,8 +18,7 @@ def BatchSQL(sqls, path = "../../Data/His/Ra.db"):
 		sqliteConnection.close()
 
 
-def createTbStr(titles,extension=''):
-	titles.append('dt')
+def createTbStr(func,titles,extension=''):
 	sql = 'CREATE TABLE IF NOT EXISTS '+func+' ('
 	begin = False
 	for title in titles:
@@ -31,7 +30,11 @@ def createTbStr(titles,extension=''):
 	sql+=')'
 	return sql
 
-def arr2joinSQLStr(titles,columns,asso):
+def arr2joinSQLStr(func,titles,columns):
+	if len(titles)!=len(columns):
+		print('Lenght:',len(titles),len(columns))
+		print('Lenght:',(titles),(columns))
+
 	sql = 'INSERT INTO '+func+' SELECT '
 	begin = False
 	for x in range(0,len(titles)):

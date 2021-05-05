@@ -1,8 +1,10 @@
 import HelperFile
+import HelperSQL
+
 from bs4 import BeautifulSoup
 import os
 
-comment = '''
+command = '''
 cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra_deploy/Script/Python
 python3 RaceCard_1.0.0.py
 
@@ -31,7 +33,7 @@ def tds2csv(text):
 			if '<img ' in str(x):
 				# print(' ===== ',x)
 				continue
-			print(' ===== ',x)
+			# print(' ===== ',x)
 			x=x.get_text()
 			xs.append(x)
 		return ",".join(xs)
@@ -43,11 +45,14 @@ func='RaceCard'
 path = DATA_HOME+func+"_1.0.0/"
 Tpath = DATA_HOME+func+"_1.1.1/"
 # T2path = DATA_HOME+func+"_1.1.2/"
-
+racecardtitle_=None
+out=''
+raceno=1
 for file in os.listdir(path):
 	if file.endswith(".html"):
+		date=file.split('_')[0].replace('.','-')
 		filename=path+file
-		html_doc = HelperFile.readUTF8File(filename)
+		html_doc = HelperFile.readUTF8File(filename).replace(',','')
 
 		racecardlist = shortExtractHTML(html_doc,'table[id*="racecardlist"]')
 
@@ -55,7 +60,19 @@ for file in os.listdir(path):
 		racecardtitle=tds2csv(racecardtitle)
 		
 		tbody = BeautifulSoup(racecardlist, 'html.parser').select('tr[class*="f_fs13"]')
-		out=racecardtitle+'\n'
+		racecardtitle_='dt,raceno,'+racecardtitle.replace('綵衣,','')
+		
 		for x in tbody:
-			out+=tds2csv(x).replace('\n','')+'\n'
-		HelperFile.saveUTF8File(Tpath+file, out)
+			row=date+','+str(raceno)+','+tds2csv(x).replace('\n','')
+			sql=HelperSQL.arr2joinSQLStr(func,racecardtitle_.split(','),row.split(','))
+			HelperSQL.BatchSQL([sql])
+			out+=row+'\n'
+		raceno+=1
+
+racecardtitle_=racecardtitle_
+sql=HelperSQL.createTbStr(func,racecardtitle_.split(','),',PRIMARY KEY(`dt`,`raceno`,`騎師`)')
+HelperSQL.BatchSQL([sql])
+out=racecardtitle_+'\n'+out
+HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out)
+
+# HelperSQL.createTbStr(titles,',PRIMARY KEY("馬名","dt")')

@@ -1,9 +1,11 @@
+command = '''
 
+cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
+python3 LocalResults_1.0.1_toSQL.py
+
+'''
 from bs4 import BeautifulSoup
 import HelperSQL
-# cd /Users/leekwunfung/Documents/GitHub/Ra/Script/Python/
-# python3 LocalResults_1.0.1_toSQL.py
-
 import os
 
 func = 'LocalResults'
@@ -65,11 +67,12 @@ for file in dirFiles:
 				# asso={}
 				# for i in range(0,len(titles)):
 				# 	asso[titles[i]]=arr[i]
-					
-				sqlArr.append(HelperSQL.arr2joinSQLStr(titles,arr, arr2Asso(titles,arr) ))
+								
+				titles.append('dt')
+				sqlArr.append(HelperSQL.arr2joinSQLStr(func,titles,arr))
 			else:
 				titles=arr
-				sqlArr.append(HelperSQL.createTbStr(titles,',PRIMARY KEY("馬名","dt")'))
+				sqlArr.append(HelperSQL.createTbStr(func,titles,',PRIMARY KEY("馬名","dt")'))
 			arr1.append(arr)
 			arr = []
 			titles_flag = True
