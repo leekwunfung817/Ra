@@ -3,6 +3,7 @@
 import sqlite3
 
 def BatchSQL(sqlArr, path = "../../../Ra_calculate/Ra.db"):
+	success = True
 	sqliteConnection = sqlite3.connect(path)
 	print("Successfully Connected to SQLite")
 	for sqlite_insert_query in sqlArr:
@@ -13,9 +14,11 @@ def BatchSQL(sqlArr, path = "../../../Ra_calculate/Ra.db"):
 			sqliteConnection.commit()
 			cursor.close()
 		except sqlite3.Error as error:
+			success = False
 			print("Failed to insert data into sqlite table", error)
 	if sqliteConnection:
 		sqliteConnection.close()
+	return success
 
 
 def createTbStr(func,titles,extension=''):

@@ -13,7 +13,8 @@ python3 LocalResults_download.py
 cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra_deploy/Script/Python
 python LocalResults_download.py
 python LocalResults_1.0.0_extractData.py
-
+python LocalResults_1.0.1_extractData.py
+python LocalResults_1.0.1a_toSQL.py
 
 '''
 

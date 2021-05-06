@@ -10,12 +10,12 @@ python LocalResults_1.0.1a_toSQL.py
 '''
 from bs4 import BeautifulSoup
 import HelperSQL
+import HelperFile
 import os
 
 func = 'LocalResults'
 
 path = "../../Data/His/"+func+"_1.0.0/"
-Tpath = "../../Data/His/"+func+"_1.0.1/"
 
 def nextLine2sinLine(txt):
 	for x in range(1,10):
@@ -45,9 +45,11 @@ titles_flag = False
 titles = []
 columns = []
 
-sqlArr = ['DROP TABLE '+func]
+# HelperSQL.BatchSQL(['DROP TABLE '+func])
 ctf=False
 for file in dirFiles:
+	if '.sql' in file:
+		continue
 	title_len = 7
 	content_len = 6
 
@@ -55,11 +57,16 @@ for file in dirFiles:
 		continue
 
 	fp = path+file
+	sqlfp = fp+'.sql'
+	if os.path.isfile(sqlfp):
+		continue
+		pass
 	# print(fp)
 	fContent = open(fp,"rb").read().decode("utf-8")
 	fContent = RemoveSpliter(fContent)
 	arr1 = []
 	arr = []
+	sqlarr=[]
 	for line in fContent.split("\n"):
 		if len(line)==0:
 			titles_flag = False
@@ -74,18 +81,19 @@ for file in dirFiles:
 					titles.append('dt')
 				# print('Lenght:',len(titles),len(columns))
 
-				# print(titles)		
-				sqlArr.append(HelperSQL.arr2joinSQLStr(func,titles,columns))
+				# print(titles)	
+				sqlarr.append(HelperSQL.arr2joinSQLStr(func,titles,columns))	
+				
 			else:
 				titles=arr
 				if not ctf:
 					titles.append('dt')
-					sqlArr.append(HelperSQL.createTbStr(func,titles,',PRIMARY KEY(`馬名`,`dt`)'))
+					HelperSQL.BatchSQL([HelperSQL.createTbStr(func,titles,',PRIMARY KEY(`馬名`,`dt`)')])
 					ctf=True
 			arr1.append(arr)
 			arr = []
 			titles_flag = True
 
 		arr.append(line)
-		# 
-HelperSQL.BatchSQL(sqlArr)
+	if HelperSQL.BatchSQL(sqlarr):
+		HelperFile.saveUTF8File(sqlfp,"\n".join(sqlarr))
