@@ -47,9 +47,10 @@ Tpath = DATA_HOME+func+"_1.1.1/"
 # T2path = DATA_HOME+func+"_1.1.2/"
 racecardtitle_=None
 out=''
-raceno=1
+# raceno=1
 for file in os.listdir(path):
 	if file.endswith(".html"):
+		raceno=file.split('.html')[0].split('_')[1]
 		date=file.split('_')[0].replace('.','-')
 		filename=path+file
 		html_doc = HelperFile.readUTF8File(filename).replace(',','')
@@ -67,12 +68,11 @@ for file in os.listdir(path):
 			sql=HelperSQL.arr2joinSQLStr(func,racecardtitle_.split(','),row.split(','))
 			HelperSQL.BatchSQL([sql])
 			out+=row+'\n'
-		raceno+=1
+		print(file,raceno)
+		# raceno+=1
 
 racecardtitle_=racecardtitle_
 sql=HelperSQL.createTbStr(func,racecardtitle_.split(','),',PRIMARY KEY(`dt`,`raceno`,`騎師`)')
 HelperSQL.BatchSQL([sql])
 out=racecardtitle_+'\n'+out
 HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out.replace(',','\t'))
-
-# HelperSQL.createTbStr(titles,',PRIMARY KEY("馬名","dt")')
