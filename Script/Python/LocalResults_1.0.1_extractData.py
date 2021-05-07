@@ -36,6 +36,8 @@ dirFiles.sort(reverse=True)
 print(dirFiles)
 
 for file in dirFiles:
+	if '.sql' in file:
+		continue
 	title_len = 7
 	content_len = 6
 
@@ -55,7 +57,7 @@ for file in dirFiles:
 		if len(arr)==12:
 			arr1.append(arr)
 			arr = []
-		arr.append(line)
+		arr.append(line.replace(' ',''))
 
 	full_txt = file+'\n'
 	for x in arr1:
