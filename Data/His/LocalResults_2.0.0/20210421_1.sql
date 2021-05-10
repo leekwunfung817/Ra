@@ -1,0 +1,1 @@
+INSERT INTO LocalResultsComInfo SELECT '20210421_1' `dt`,'2200' `meters`;

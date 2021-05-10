@@ -44,7 +44,7 @@ def arr2joinSQLStr(func,titles,columns):
 		if begin:
 			sql+=','
 		# print(x)
-		sql+='\''+columns[x]+'\' `'+titles[x]+'`'
+		sql+='\''+str(columns[x])+'\' `'+str(titles[x])+'`'
 		begin = True
 	sql+=';'
 	# print(txt)
