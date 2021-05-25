@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 import os
 
 def readline(txt):
-	return '/t'.join(txt.split("/n"))+'/n'
+	return '\t'.join(txt.split("\n"))+'\n'
 
 def shortExtractHTML(html_doc,expression):
 	return str(BeautifulSoup(html_doc, 'html.parser').select(expression)[0])
@@ -21,25 +21,22 @@ def shortExtractTR(html_doc,expression):
 
 def nextLine2sinLine(txt):
 	for x in range(1,10):
-		txt = txt.replace("/n/n", "/n")
+		txt = txt.replace("\n\n", "\n")
 	return txt
 
 def tds2csv(text):
-	try:
-		soup = BeautifulSoup(str(text), 'html.parser')
-		arr = soup.select('td')
-		xs=[]
-		for x in arr:
-			if '<img ' in str(x):
-				continue
-			x=x.get_text()
-			xs.append(x)
-		return ",".join(xs)
-	except Exception as e:
-		return None
+	soup = BeautifulSoup(str(text), 'html.parser')
+	arr = soup.select('td')
+	xs=[]
+	for x in arr:
+		if '<img ' in str(x):
+			continue
+		x=x.get_text()
+		xs.append(x)
+	return ",".join(xs)
 
 def getMeter(html):
-	txt='米<br>'
+	txt='米'
 	arr = html.split(txt)[0].split(' ')
 	if txt not in html:
 		return ''
@@ -62,11 +59,12 @@ for file in os.listdir(path):
 		filename=path+file
 
 		html_doc = HelperFile.readUTF8File(filename).replace(',','')
+		print(filename)
 		meter = getMeter(html_doc)
+		print(meter)
 		if len(meter)==0:
 			continue
-		print(filename)
-		print(meter)
+		
 
 		racecardlist = shortExtractHTML(html_doc,'table[id*="racecardlist"]')
 		racecardtitle = shortExtractHTML(racecardlist,'tr[class*="trBg01"]')
@@ -94,5 +92,5 @@ for file in os.listdir(path):
 			print(file,raceno)
 
 racecardtitle_=racecardtitle_
-out=racecardtitle_+'/n'+out
-HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out.replace(',','/t'))
+out=racecardtitle_+'\n'+out
+HelperFile.saveUTF8File(DATA_HOME+func+'/extracted.txt', out.replace(',','\t'))
