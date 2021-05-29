@@ -58,7 +58,7 @@ for file in os.listdir(path):
 		date=file.split('_')[0].replace('.','-')
 		filename=path+file
 
-		html_doc = HelperFile.readUTF8File(filename).replace(',','')
+		html_doc = HelperFile.readUTF8File(filename).replace(',','').replace('\'','')
 		print(filename)
 		meter = getMeter(html_doc)
 		print(meter)
