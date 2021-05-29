@@ -2,7 +2,8 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-
+from webdriver_manager.chrome import ChromeDriverManager
+import Version
 chrome_options = Options()
 chrome_options.add_argument("--window-size=5,5")
 def nextLine2sinLine(txt):
@@ -11,9 +12,9 @@ def nextLine2sinLine(txt):
 	return txt
 
 def Request(url):
-	driver='MacOS/chromedriver.89.0.4389.23' # Mac
-	driver='Win/chromedriver.89.0.4389.23.exe' # Win
+	driver = Version.driver
 	binary_path='./'+driver
+	print('Use driver:',binary_path)
 	print(url)
 	try:
 		driver = webdriver.Chrome(executable_path=binary_path,chrome_options=chrome_options)
@@ -26,9 +27,14 @@ def Request(url):
 		return txt
 	except Exception as e:
 		print(e)
-	return None
+	exit()
+	# return None
 
 def saveUTF8File(filename,txt):
+	if txt is None:
+		print('Write None to ',filename,' fail')
+		return
+		pass
 	f = open(filename, "wb")
 	f.write(txt.encode("utf-8"))
 	f.close()

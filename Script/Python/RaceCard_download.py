@@ -1,8 +1,8 @@
 
 comment = '''
 cd C:/Users/ivan.lee.PRIMECREATION/Documents/ivan/Projects source/Others/h/Ra_deploy/Script/Python
-python3 RaceCard_download.py
-python3 RaceCard_1.0.0.py
+python RaceCard_download.py
+python RaceCard_1.0.0.py
 
 '''
 
@@ -15,9 +15,13 @@ funcName = "RaceCard"
 path="../../Data/His/"+funcName+"/"
 Tpath="../../Data/His/"+funcName+"_1.0.0/"
 filename = path+str('future')+".html"
-HelperFile.saveUTF8File(filename,HelperFile.Request(str(url)))
-
+html_doc = HelperFile.Request(str(url))
+if html_doc is None:
+	print('None html readed')
+	exit()
+HelperFile.saveUTF8File(filename,html_doc)
 html_doc = HelperFile.readUTF8File(filename)
+
 soup = BeautifulSoup(html_doc, 'html.parser')
 arr = soup.select('div[class*="racingNum"]')[0]
 date = str(arr).split('RaceDate=')[1][:10]

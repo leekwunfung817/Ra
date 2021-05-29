@@ -2,5 +2,5 @@ https://chromedriver.storage.googleapis.com/index.html?path=90.0.4430.24/
 
 https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/
 
-pip3 install chromedriver-py==89.0.4389.23 selenium==3.141.0 pyvirtualdisplay==2.1 beautifulsoup4==4.9.3 pysqlite3==0.4.6
+pip3 install webdriver-manager chromedriver-py==91.0.4472.19 selenium==3.141.0 pyvirtualdisplay==2.1 beautifulsoup4==4.9.3 pysqlite3==0.4.6
 
