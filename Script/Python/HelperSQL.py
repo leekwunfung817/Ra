@@ -2,7 +2,7 @@
 
 import sqlite3
 
-def BatchSQL(sqlArr, path = "../../../Ra_calculate/Ra.db"):
+def BatchSQL(sqlArr, path = "../../../Ra_calculate/A_Ra.db"):
 	success = True
 	sqliteConnection = sqlite3.connect(path)
 	print("Successfully Connected to SQLite")
