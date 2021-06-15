@@ -1,2 +1,3 @@
-Create view for apply formula
-	find the - not accurate rates (NAR)
+1: Predict the past record to findout accuracy
+2: Make the web-worm to wrap the weather
+3: Add prediction fact - periodic status

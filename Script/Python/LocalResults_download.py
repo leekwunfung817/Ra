@@ -36,10 +36,24 @@ from bs4 import BeautifulSoup
 
 import HelperFile
 
-commonURL='https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx'
+# commonURL='https://racing.hkjc.com/racing/information/Chinese/Racing/LocalResults.aspx'
+# commonURL='https://racing.hkjc.com/racing/information/chinese/Racing/LocalResults.aspx?RaceDate=2021/06/13&Racecourse=ST&RaceNo=2'
+commonURL='https://racing.hkjc.com/racing/information/chinese/Racing/LocalResults.aspx'
+
+
 def HisResDate():
+	path="../../Data/His/"+'LocalResults_temp'+"/"+'lastResult.html'
 	html = HelperFile.Request(commonURL)
+	HelperFile.saveUTF8File(path,html)
+
 	html = str(BeautifulSoup(html, 'html.parser').select('select[id*="selectId"]')[0])
+	selected = BeautifulSoup(html, 'html.parser').select('option[selected*="selected"]')[0]
+	selected_date=str(selected.get_text())
+	print('selected_date',selected_date)
+	dar=selected_date.split('/')
+	dar=[dar[2],dar[1],dar[0]]
+	RememHis(dar[0],dar[1],dar[2])
+
 	arr = BeautifulSoup(html, 'html.parser').select('option')
 	for x in arr:
 		x=str(x.get_text())
@@ -54,7 +68,7 @@ def HisRes(y,m,d,s):
 
 def RememHis(y,m,d):
 	isNone = False
-	# print(y+m+d)
+	print(y+m+d)
 	funcName='LocalResults'
 	path="../../Data/His/"+funcName+"/"
 	for x in range(1,11):
@@ -77,9 +91,6 @@ def RememHis(y,m,d):
 		if 'date='+datestr not in txt:
 			print('date not match (the future date with wrong date response)')
 			break
-
-		f = open(filename, "wb+")
-		f.write(txt.encode("utf-8"))
-		f.close()
+		HelperFile.saveUTF8File(filename,txt)
 
 HisResDate()
